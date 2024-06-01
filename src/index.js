@@ -2,6 +2,9 @@
 import dotenv from 'dotenv' // better approch
 import connectDB from "./db/index.js";
 
+import express from "express";
+const app = express()
+
 dotenv.config({
   path: './env '
 })
@@ -18,8 +21,6 @@ connectDB().then(() => {
 
 /*  first approch
 
-import express from "express";
-const app = express()
 
   // iifi
   (async () => {
